@@ -17,4 +17,6 @@ func callSayHello(client pb.GreetserviceClient) {
 	if err != nil {
 		log.Fatalf("could not greet!")
 	}
+
+	log.Printf("%s", res.Message)
 }
